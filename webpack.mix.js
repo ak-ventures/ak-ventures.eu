@@ -1,19 +1,19 @@
-let mix = require('laravel-mix');
-let build = require('./tasks/build.js');
+let mix = require("laravel-mix");
+require('laravel-mix-jigsaw');
 
 mix.disableSuccessNotifications();
 mix.setPublicPath('source/assets/build');
-mix.webpackConfig({
-    plugins: [
-        build.jigsaw,
-        build.browserSync(),
-        build.watch(['source/**/*.md', 'source/**/*.php', 'source/**/*.pcss', '!source/**/_tmp/*']),
-    ]
-});
 
-mix.js('source/_assets/js/main.js', 'js')
-    .postCss('source/_assets/pcss/main.pcss', 'css', [
+mix.jigsaw()
+    .js('source/_assets/js/main.js', 'js').vue()
+    .css('source/_assets/pcss/main.pcss', 'css/main.css', [
         require('postcss-import'),
         require('tailwindcss'),
     ])
+    .options({ processCssUrls: false })
+    .browserSync({
+        server: 'build_local',
+        files: ['build_local/**'],
+    })
+    .sourceMaps()
     .version();

@@ -2,4 +2,9 @@
 
 command = "npm run production"
 publish = "build_production"
-environment = { PHP_VERSION = "7.2" }
+environment = { PHP_VERSION = "8.0", NODE_VERSION = "14"}
+
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  force=true
