@@ -5,6 +5,7 @@ mix.disableSuccessNotifications();
 mix.setPublicPath('source/assets/build');
 
 mix.jigsaw()
+    .vue({ version: 2 })
     .js('source/_assets/js/main.js', 'js').vue()
     .css('source/_assets/pcss/main.pcss', 'css/main.css', [
         require('postcss-import'),
