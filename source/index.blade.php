@@ -29,14 +29,19 @@
                     <div class="absolute inset-0 bg-blue-600 opacity-20 h-full w-full rounded-full"></div>
                 </div>
                 <span class="block text-xl mb-2">Amadeusz Annissimo</span>
-                <ul class="flex items-between">
+                <ul class="flex items-between items-center">
+                    <li>
+                        <a href="https://annissimo.com">
+                            <globe-icon class="h-4 text-blue-800 mx-1"></globe-icon>
+                        </a>
+                    </li>
                     <li>
                         <a href="https://www.linkedin.com/in/annissimo/">
                             <linkedin-icon class="h-4 text-blue-800 mx-1"></linkedin-icon>
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/Amadeann">
+                        <a href="https://x.com/aannissimo">
                             <twitter-icon class="h-4 text-blue-800 mx-1"></twitter-icon>
                         </a>
                     </li>

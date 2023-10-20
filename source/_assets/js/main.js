@@ -1,6 +1,7 @@
 window.Vue = require("vue").default;
 
 let svgComponents = {
+    GlobeIcon: "globe-icon",
     LinkedinIcon: "linkedin-icon",
     TwitterIcon: "twitter-icon",
     StackoverflowIcon: "stackoverflow-icon",
