@@ -2,4 +2,11 @@
 
 command = "npm run production"
 publish = "build_production"
-environment = { PHP_VERSION = "8.0", NODE_VERSION = "14"}
+environment = { PHP_VERSION = "8.0", NODE_VERSION = "14" }
+
+[[redirects]]
+from = "/careers/*"
+to = "https://ak-ventures.notion.site/Careers-with-A-K-Ventures-O-4bc7b0d0238e47008ba9fd480600e5ff"
+status = 200
+force = true
+headers = { X-From = "Netlify" }
