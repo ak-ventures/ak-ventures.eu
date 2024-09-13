@@ -11,7 +11,7 @@
 #cookiescript_fsd_wrapper #cookiescript_accept, 
 #cookiescript_fsd_wrapper #cookiescript_reject, 
 #cookiescript_fsd_wrapper #cookiescript_save {
-  border-radius: 9999px;
+  border-radius: 0;
   color: #fff;
   padding: 12px;
   text-align: center;
@@ -37,7 +37,7 @@
 /* Banner */
 
 #cookiescript_injected_wrapper #cookiescript_injected {
-    font-family: Nunito, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-family: "Roboto Slab", serif;
     padding: 25px 40px;
 
     #cookiescript_header {
