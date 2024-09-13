@@ -1,16 +1,6 @@
 @extends('_layouts.master')
 
 @section('body')
-<div class="hero bg-cover bg-center relative flex justify-end text-white" style="background-image: url('/assets/images/tallinn_panorama_1200_675.jpg');">
-    <div class="w-full md:w-3/5 lg:w-1/2 pt-20 pb-20 md:py-20 lg:py-32 px-4 flex justify-center lg:justify-start">
-        <div class="max-w-xl text-center md:text-left">
-            <h1 class="mb-8 text-4xl lg:text-5xl font-bold leading-normal">A&K Ventures OÜ</h1>
-            <h2 class="text-2xl font-light leading-normal">
-                Profitable ventures powered by Estonian e-residency.
-            </h2>
-        </div>
-    </div>
-</div>
 <div class="flex justify-center bg-gold-100 text-gray-600">
     <div class="container max-w-3xl flex flex-col items-center mx-auto py-20 px-4 text-center">
         <h2 class="text-3xl mb-12">About Us</h2>
@@ -148,23 +138,5 @@
         </div>
     </div>
 </div>
-<footer class="text-gray-100">
-    <div class="bg-gray-700 px-4 py-8 font-thin text-sm">
-        <div class="container mx-auto text-center">
-            <p class="mb-1">
-                © 2016-{{ date('Y') }} A&amp;K Ventures OÜ. All rights reserved.
-            </p>
-            <p class="mb-1 text-gray-200">
-                A&K Ventures OÜ | Sepapaja 6 | Tallinn 15551 | Estonia | +372 71 22 225 | info@ak-ventures.eu
-            </p>
-            <p class="mb-1 text-gray-200">
-                Board Members: Karol Kaczmarek, Amadeusz Annissimo | Registered at Tartu County Court Registration Department
-            </p>
-            <p class="mb-1 text-gray-200">
-                Registry Code: 14080385 | EU VAT: EE102039335
-            </p>
-        </div>
-    </div>
-</footer>
 @endsection
 

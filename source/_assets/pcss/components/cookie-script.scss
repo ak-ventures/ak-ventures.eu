@@ -1,0 +1,224 @@
+/* SAS Styling */
+/* Banner & details */
+
+#cookiescript_injected_wrapper {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#cookiescript_injected_wrapper #cookiescript_accept, 
+#cookiescript_injected_wrapper #cookiescript_manage, 
+#cookiescript_fsd_wrapper #cookiescript_accept, 
+#cookiescript_fsd_wrapper #cookiescript_reject, 
+#cookiescript_fsd_wrapper #cookiescript_save {
+  border-radius: 9999px;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #002f86;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: inherit;
+}
+
+#cookiescript_injected_wrapper #cookiescript_description, 
+#cookiescript_fsd_wrapper .cookiescript_fsd_description {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+#cookiescript_description a,
+.cookiescript_fsd_description a {
+  font-weight: 500;
+  text-decoration: underline;
+  color: #a8acad;
+}
+
+/* Banner */
+
+#cookiescript_injected_wrapper #cookiescript_injected {
+    font-family: Nunito, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    padding: 25px 40px;
+
+    #cookiescript_header {
+      font-size: 2.25rem;
+      text-align: left;
+      width: 100%;
+      font-weight: 700;
+      padding: 0 0 20px 0;
+      margin: 0 auto;
+    }
+    
+    #cookiescript_description {
+      text-align: left;
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    #cookiescript_buttons {
+      /* justify-content: right; */
+      margin: 0;
+    }
+    
+    svg#cookiescript_manageicon {
+      display: none;
+    }
+    
+    #cookiescript_manage_wrap {
+      margin: 0;
+      margin-right: 15px;
+    }
+    
+    #cookiescript_manage {
+      color: #a8acad;
+      display: block;
+      text-transform: none;
+      font-weight: 500;
+    }
+}
+
+
+/* Details */
+
+#cookiescript_injected_fsd {
+    .cookiescript_fsd_cookies {
+      max-height: 100%
+    }
+    
+    #cookiescript_fsd_wrapper {
+      max-height: 90%;
+      top: 5%;
+    }
+    
+    .cookiescript_fsd_cookies.cookiescript_hidden {
+      max-height: 0
+    }
+    
+    #cookiescript_fsd_wrapper #cookiescript_reject, 
+    #cookiescript_fsd_wrapper #cookiescript_save {
+      background-color: #fff;
+      border: 1px solid #a8acad;
+      color: #a8acad;
+    }
+    
+    #cookiescript_reject:hover, 
+    #cookiescript_save:hover {
+      background-color: #e9eaea;
+      border: 1px solid #a8acad;
+    }
+    
+    #cookiescript_fsd_wrapper #cookiescript_accept {
+      background-color: #002f86;
+      border: 1px solid #002f86;
+      color: #fff;
+    }
+    
+    #cookiescript_accept:hover {
+      background-color: #002a79;
+      border: 1px solid #002a79;
+    }
+}
+
+
+
+/* Amade styles */
+
+#cookiescript_injected_wrapper #cookiescript_injected {
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+
+    #cookiescript_manage_wrap {
+      order: 5;
+      width: 100%;
+      margin-right:0;
+      display: flex;
+    }
+    
+    #cookiescript_accept, 
+    #cookiescript_reject, 
+    #cookiescript_save,
+    #cookiescript_manage {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+    
+    #cookiescript_buttons {
+      order: 4;
+      width: 100%;
+    }
+}
+
+
+#cookiescript_injected_fsd {
+    .cookiescript_fsd_footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .cookiescript_fsd_footer #cookiescript_buttons {
+        row-gap: 10px;
+    }
+    
+    .cookiescript_fsd_footer #cookiescript_accept,
+    .cookiescript_fsd_footer #cookiescript_reject,
+    .cookiescript_fsd_footer #cookiescript_save {
+      width: 100%;
+      margin: 0;
+    }
+    
+    #cookiescript_accept {
+      order: 2;
+    }
+    
+    #cookiescript_reject {
+      order: 3;
+    }
+    
+    #cookiescript_save {
+      order: 4;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #cookiescript_injected_wrapper #cookiescript_injected {
+        #cookiescript_header {
+            order: 2;
+        }
+    
+        #cookiescript_description {
+            order: 3;
+        }
+    
+        #cookiescript_manage_wrap {
+            order: 4;
+            margin-left: auto;
+            width: auto;
+        }
+    
+        #cookiescript_manage,
+        #cookiescript_buttons {
+            width: auto;
+        }
+    
+        #cookiescript_manage {
+            width: 200px;
+        }
+    
+        #cookiescript_buttons {
+            order: 5;
+            margin-left: 1rem;
+        }
+    
+        #cookiescript_accept, 
+        #cookiescript_reject, 
+        #cookiescript_save {
+            width: 400px;
+        }
+    }
+
+    #cookiescript_injected_fsd .cookiescript_fsd_wrapper {
+        max-height: 100%
+    }
+}
